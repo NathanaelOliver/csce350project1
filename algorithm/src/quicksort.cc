@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
     start = clock();
     quicksort(&list, 0, static_cast<int>(list.size() - 1));
     end = clock();
-    cout << (double(end - start) / double(CLOCKS_PER_SEC)) << std::endl;
+    cout << (double(end - start) / double(CLOCKS_PER_SEC / 1000)) << " milliseconds" << std::endl;
     print(list, "output.txt");
     return 0;
 }
