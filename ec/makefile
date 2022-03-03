@@ -16,6 +16,5 @@ extracredit : src/extracredit.cc inc/extracredit.h
 test : extracredit
 	@./extracredit
 
-
 clean:
 	@rm -f extracredit
