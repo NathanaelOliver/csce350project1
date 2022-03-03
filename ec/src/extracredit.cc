@@ -35,8 +35,8 @@ int main(int argc, char *argv[])
             start = clock();
             quicksort(&list, 0, static_cast<int>(list.size() - 1));
             end = clock();
-            myfile << (double(end - start) / double(CLOCKS_PER_SEC)) << " ";
-            sum += (double(end - start) / double(CLOCKS_PER_SEC));
+            myfile << (double(end - start) / double(CLOCKS_PER_SEC / 1000)) << " ";
+            sum += (double(end - start) / double(CLOCKS_PER_SEC / 1000));
         }
         myfile.close();
         cout << "Average " << ((int)pow(10, i)) << ": " << (sum / 100) << endl;
